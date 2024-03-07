@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: linear-gradient(320grad,#eeff00,#00ff6a);
+    font-family: 'Dosis', sans-serif;
+}
+button{
+    height: 6.68rem;
+    width: 6.68rem;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(110,110,110);
+    font-size: 40px;
+    transition: background-color, 200ms;
+    color: white;
+}
+.Lbutton{
+    width: 10.78rem;
+}
+.XLbutton{
+    width: 15rem; 
+}
+.display{
+    background-color: rgb(70,70,70);
+    display: flex;
+    height: 5rem;
+    width: 32.2rem;
+    margin: 0;
+    border: none;
+    cursor:auto;
+    overflow: auto;
+    text-align: right;
+    margin: 0;
+    font-size: 50px;
+    transition: opasity, 200;
+    color: white;
+}
+.seconddisplay{
+    background-color: rgb(70,70,70);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 2rem;
+    width: 32.2rem;
+    border: none;
+    margin: 0;
+    cursor:auto;
+    overflow: auto;
+    text-align: right;
+    font-size: 25px;
+    transition: opasity, 200;
+    color: white;
+}
+.calculator{
+    background-color: rgba(50,50,50, 0.9);
+    border: none;
+    border-radius: 16px;
+    min-width: 32.5rem;
+    min-height: 44rem;
+}
+button:hover{
+    background-color: rgb(140,140,140);
+}
+button:active{
+    background-color: rgb(170,170,170);
+}
+@media only screen and (max-width: 600px) {
+    .calculator {
+        min-width: 45%;
+        min-height: 30vh;
+    }
+
+    button {
+        height: 5vh;
+        width: 5vh;
+        font-size: 2.5vh;
+    }
+
+    .Lbutton {
+        width: 7.5vh;
+    }
+
+    .XLbutton {
+        width: 11vh;
+    }
+
+    .display {
+        height: 15h;
+        width: 45%;
+        font-size: 3.5vh;
+    }
+
+    .seconddisplay {
+        height: 2vh;
+        width: 45%;
+        font-size: 2vh;
+    }
+}

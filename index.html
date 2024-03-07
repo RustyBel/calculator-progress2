@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="text">
+            <input type="text" class="seconddisplay" readonly>
+            <input class="display"type="text" readonly>
+        </div> 
+        <div class="rows">
+            <div class="first-row">
+                <button class="XLbutton" onclick="deleteall()">C</button>
+                <button class="button" onclick="deleteonenumber()">&larr;</button>
+                <button class="button" onclick="divide()">&divide;</button>
+            </div>
+            <div class="second-row">
+                <button class="button" onclick="appendanumber('7')">7</button>
+                <button class="button" onclick="appendanumber('8')">8</button>
+                <button class="button" onclick="appendanumber('9')">9</button>
+                <button class="button" onclick="multiply()">&times;</button>
+            </div>
+            <div class="tirth-row">
+                <button class="button" onclick="appendanumber('4')">4</button>
+                <button class="button" onclick="appendanumber('5')">5</button>
+                <button class="button" onclick="appendanumber('6')">6</button>
+                <button class="button" onclick="minus()">&minus;</button>
+            </div>
+            <div class="forth-row">
+                <button class="button" onclick="appendanumber('1')">1</button>
+                <button class="button" onclick="appendanumber('2')">2</button>
+                <button class="button" onclick="appendanumber('3')">3</button>
+                <button class="button" onclick="plus()">&plus;</button>
+            </div>
+            <div class="fifth-row">
+                <button class="Lbutton" onclick="appendanumber('0')">0</button>
+                <button class="Lbutton" onclick="appendanumber('.')">.</button>
+                <button class="button" onclick="equals()">&equals;</button>
+            </div>
+                
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
